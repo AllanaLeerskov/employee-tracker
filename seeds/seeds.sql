@@ -1,36 +1,30 @@
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ('Ron', 'Swanson', 1, null);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ('Leslie', 'Knope', 2, 1);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ('Ben', 'Wyatt', 3, 1);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ('April', 'Ludgate', 4, 1);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ('Andy', 'Dwyer', 4, 1);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ('Jerry', 'Gergich', 5, 2);
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ('Tom', 'Haverford', 3, null);
 
-INSERT INTO department (department_name)
-VALUES ('Director');
-INSERT INTO department (department_name)
-VALUES ('Deputy Director');
-INSERT INTO department (department_name)
-VALUES ('Assistant');
-INSERT INTO department (department_name)
-VALUES ('Administrator');
-INSERT INTO department (department_name)
-VALUES ('Employee');
+INSERT INTO department (name)
+VALUES 
+('IT'),
+('Finance & Accounting'),
+('Sales & Marketing'),
+('Operations');
 
 INSERT INTO role (title, salary, department_id)
-VALUES ('Director', 120000, 1);
-INSERT INTO role (title, salary, department_id)
-VALUES ('Deputy Director', 80000, 2);
-INSERT INTO role (title, salary, department_id)
-VALUES ('Assistant', 90000, 4);
-INSERT INTO role (title, salary, department_id)
-VALUES ('Administrator', 40000, 3);
-INSERT INTO role (title, salary, department_id)
-VALUES ('Employee', 75000, 5);
+VALUES
+('Full Stack Developer', 80000, 1),
+('Software Engineer', 120000, 1),
+('Accountant', 10000, 2), 
+('Financial Analyst', 150000, 2),
+('Marketing Coordindator', 70000, 3), 
+('Sales Lead', 90000, 3),
+('Project Manager', 100000, 4),
+('Operations Manager', 90000, 4);
+
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES 
+('Elena', 'Gilbert', 2, null),
+('Jeremy', 'Gilbert', 1, 1),
+('Damon', 'Salvatore', 4, null),
+('Stephan', 'Salvatore', 3, 3),
+('Caroline', 'Forbes', 6, null),
+('Bonnie', 'Bennett', 5, 5),
+('Matt', 'Donovan', 7, null),
+('Tyler', 'Lockwood', 8, 7);
